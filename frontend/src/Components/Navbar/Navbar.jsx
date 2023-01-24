@@ -41,9 +41,9 @@ const Navbar = () => {
                             <div className="search">
                                 <AiOutlineSearch onClick={openInput} />
                                 <div className='searchInput' style={open ? { display: "block" } : { display: "none" }}>
-                                    <form>
+                                    {/* <form> */}
                                         <input type="text" name='search' value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Type here..." />
-                                    </form>
+                                    {/* </form> */}
                                 </div>
                             </div>
                             <div className="basket">

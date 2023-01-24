@@ -5,11 +5,15 @@ import { AiTwotoneDelete } from "react-icons/ai"
 import { useContext } from 'react'
 import { mainContext } from '../../../Context/Context'
 const ProductCard = () => {
-    const { data, delData } = useContext(mainContext)
+    const { data, delData,search} = useContext(mainContext)
     return (
         <div className='productCard'>
             <div className="row">
-                {data && data.map((e, index) => (
+                {data && data
+                .filter((item)=>{
+                    return  search.toLowerCase()==="" ? item : item.name.toLowerCase().includes(search);
+                })
+                .map((e, index) => (
                     <div className="col-3 card" key={index}>
                         <div className='cardImage'>
                             <img src={e.url} alt="product1" />

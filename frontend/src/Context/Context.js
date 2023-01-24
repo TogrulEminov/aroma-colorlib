@@ -14,16 +14,18 @@ function Context({ children }) {
         price: "",
         url: ""
     })
+    useEffect(() => {
+        getData()
+    },[data])
 
     const url = `http://localhost:8080/product${search}`
-
     const getData = async () => {
         const response = await axios.get(url)
         setData(response.data)
     }
 
     const delData = (id) => {
-        axios.delete(`http://localhost:8080/product${search}/${id}`)
+        axios.delete(`http://localhost:8080/product/${id}`)
     }
 
     const postData = () => {
@@ -42,10 +44,7 @@ function Context({ children }) {
             ...state, [e.target.name]: e.target.value
         })
     }
-    useEffect(() => {
-        getData()
-    }, [])
-
+   
 
     // sorted by price
     const sortByPrice = () => {
