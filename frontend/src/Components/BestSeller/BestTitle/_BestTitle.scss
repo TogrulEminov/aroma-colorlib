@@ -1,0 +1,32 @@
+.bestTitle {
+    padding: 30px 0 !important;
+
+    .row {
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .bestTitleContent {
+            position: relative;
+
+            h3 {
+                font-size: 18px;
+                padding-bottom: 10px !important;
+            }
+
+            h1 {
+                font-size: 35px;
+                color: #111 !important;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 80px;
+                left: 7%;
+                height: 2px;
+                width: 100px;
+                background-color: #5766ee;
+            }
+        }
+    }
+}

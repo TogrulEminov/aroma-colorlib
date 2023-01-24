@@ -1,0 +1,39 @@
+.saleSection{
+background: url("../../Media//parallax-bg.png") center/cover;
+min-height: 50vh;
+padding: 40px 0 !important;
+.row{
+    justify-content: flex-start;
+    align-items: flex-start;
+    .saleContent{
+        text-align: center;
+        h1{
+            font-size: 40px;
+            color: #111 !important;
+            font-weight: bold;
+        }
+        h3{
+            padding: 20px 0 !important;
+            font-size: 20px;
+            font-weight: 600;
+            color: #111 !important;
+        }
+        p{
+            font-size: 18px;
+            line-height: 25px;
+            padding-bottom: 25px !important;
+        }
+        button{
+            padding: 10px 40px !important;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff !important;
+            background-color: #384aeb;
+            text-transform: capitalize;
+            border-radius: 20px;
+        }
+    }
+}
+}

@@ -1,0 +1,137 @@
+.allNavbar {
+    border-bottom: 1px solid #ddd;
+    padding: 25px 0 !important;
+
+    .row {
+        justify-content: space-between;
+        align-items: center;
+
+        .navbarCenter {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin: 0 15px !important;
+
+                    a {
+                        font-size: 18px;
+                        font-weight: 500;
+                        position: relative;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            bottom: 0;
+                            margin: -5px 0;
+                            background-color: #13369c;
+                            visibility: hidden;
+                            transform: scaleX(0);
+                            transition: all 0.4s ease-in-out 0s;
+                        }
+
+                        &:hover:before {
+                            visibility: visible;
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbarRight {
+            display: flex;
+            align-items: center;
+
+            .searchBasket {
+                display: flex;
+                align-items: center;
+                margin: 0 10px !important;
+
+                .search {
+                    position: relative;
+
+                    svg {
+                        font-size: 30px;
+                        cursor: pointer;
+                    }
+
+                    .searchInput {
+                        position: absolute;
+                        top: 55px;
+                        right: 3px;
+                        background-color: #fff;
+                        border: 1px solid #ddd;
+                        width: 200px;
+                        padding: 10px !important;
+
+                        form {
+                            input {
+                                border: 1px solid #ddd;
+                                outline: none;
+                                width: 100%;
+                                padding: 5px !important;
+                            }
+                        }
+                    }
+                }
+
+                .basket {
+                    position: relative;
+                    margin-left: 10px !important;
+
+                    svg {
+                        font-size: 30px;
+                    }
+
+                    span {
+                        position: absolute;
+                        top: -20px;
+                        left: 35px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #13369c;
+                        color: #fff !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                    }
+                }
+
+
+            }
+            a{
+                padding: 0 20px !important;
+            }
+         div{
+            padding: 0 10px !important;
+            button{
+                background-color: #13369c;
+                color: #fff !important;
+                border: none;
+                padding: 10px 30px !important;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+         }
+
+        .hamburger {
+            button {
+                font-size: 24px;
+                padding: 5px !important;
+                background-color: transparent;
+                cursor: pointer;
+                outline: none;
+                border: 1px solid #ddd;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0 !important;
+            }
+        }
+    }
+}
+}

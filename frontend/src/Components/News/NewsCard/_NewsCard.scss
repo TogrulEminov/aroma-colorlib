@@ -1,0 +1,56 @@
+.newsCard{
+    padding: 30px 0 !important;
+    .row{
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .card{
+            border: none !important;
+            text-align: start !important;
+            .cardImage{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+
+            }
+            .cardComment{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0 !important;
+                span{
+                    color: #666 !important;
+                    svg{
+                        margin: 0 4px !important;
+                    }
+                }
+    
+            }
+            h3{
+                font-size: 20px;
+                color: #111 !important;
+                line-height: 35px;
+                margin-bottom: 25px !important;
+                height: 80px;
+                overflow: hidden;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                color: #666;
+                line-height: 30px;
+                height: 100px;
+                overflow: hidden;
+            }
+            div{
+                cursor: pointer;
+                margin: 10px 0 !important;
+                background-color: transparent;
+                border: none;
+                color: #111 !important;
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.productCard{
+    padding: 20px 0 !important;
+    .row{
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        .card{
+            margin: 20px 0 !important;
+            text-align: center;
+            border: none;
+            h3{
+             font-size: 18px;
+             padding: 10px 0 !important;
+            }
+            h2{
+                color: #111 !important;
+                font-size: 22px;
+                padding-bottom: 10px !important;
+            }
+            span{
+                color: #666 !important;
+                padding-bottom: 10px !important;
+            }
+            .btnDelete{
+                padding: 10px 0 !important;
+                cursor: pointer;
+            svg{
+                font-size: 30px;
+            }
+            }
+            .cardImage{
+                width: 100%;
+                img{
+                    height: 300px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.addSection {
+    padding: 40px 0 !important;
+
+    .row {
+        justify-content: center;
+        align-items: center;
+
+        .addForm {
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 20px !important;
+
+            .inputForm {
+                padding: 10px 0 !important;
+
+                div {
+                    padding-bottom: 10px !important;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
+                input {
+                    border-radius: 6px;
+                    border: 1px solid #ddd;
+                    padding: 6px 10px !important;
+                    width: 100%;
+                }
+
+                p {
+                    font-size: 18px;
+                    color: red !important;
+                }
+            }
+
+            .addButton {
+                padding: 10px 0 !important;
+
+                button {
+                    padding: 10px 30px !important;
+                    background-color: #4555ea;
+                    color: #fff !important;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

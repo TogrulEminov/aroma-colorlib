@@ -1,0 +1,43 @@
+.bestCard{
+    .swiper {
+    overflow-x: hidden;
+    padding: 20px 0 !important;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+    }
+    .swiper-pagination-bullet{
+        width: 20px !important;
+        height: 20px !important;
+        margin: 0 5px !important;
+    } 
+   
+    .card{
+        margin: 20px 0 !important;
+        width: 90%;
+        margin: 0 auto !important;
+        text-align: center;
+        border: none;
+        h3{
+         font-size: 18px;
+         padding: 10px 0 !important;
+        }
+        h2{
+            color: #111 !important;
+            font-size: 22px;
+            padding-bottom: 10px !important;
+        }
+        span{
+            color: #666 !important;
+            padding-bottom: 10px !important;
+        }
+        .cardImage{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
